@@ -103,3 +103,10 @@ theme:
 # test:
 # 	@$(call HELPTEXT,$@)
 # 	[ ! -d theme ] || $(MAKE) -C theme test
+
+# target: upgrade-normalize       - Upgrade LESS module - Normalize.
+.PHONY:	upgrade-normalize
+upgrade-normalize:
+	@$(call	HELPTEXT,$@)
+	npm	update	normalize.css
+	cp 	theme/node_modules/normalize.css/normalize.css	theme/modules/normalize.less
