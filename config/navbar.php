@@ -21,6 +21,18 @@ return [
                 "mark-if-parent" => true,
             ],
 
+            "grid" => [
+                "text"  => t("Grid"),
+                "url"   => $this->di->get("url")->create("grid"),
+                "title" => t("Show grid")
+            ],
+
+            "typography" => [
+                "text"  => t("Typo"),
+                "url"   => $this->di->get("url")->create("typography"),
+                "title" => t("Typography")
+            ],
+
             "about" => [
                 "text"  => t("About"),
                 "url"   => $this->di->get("url")->create("about"),
